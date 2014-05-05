@@ -1,0 +1,8 @@
+.navBullets {
+  font-size: 60px;
+  display: inline-block; }
+
+.active {
+  color: red; }
+
+/* comment */
