@@ -2,16 +2,19 @@
 <html ng-app='Slider' ng-init>
     <head>
         <!-- Angular -->
-        <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js'>
-        </script>
+        <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js'></script>
+        <!-- Routing and config -->
         <script src='app.js'></script>
-        <script src='controllers/sliderController.js'></script>
+        <!-- Minified controller(s) -->
+        <script src='grunted/controllers.js'></script>
+        <!-- Web fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans|Montserrat' rel='stylesheet' type='text/css'>
+        <!-- Minified styles -->
         <link href="grunted/styles.css" rel="stylesheet" />
     </head>
-
-<body>
-	<div ng-view class="sliderWrapper">
-	<!-- Inject view here at runtime -->
-	</div>
-</body>
+    <body>
+    	<div ng-view>
+    	<!-- Inject view here at runtime -->
+    	</div>
+    </body>
 </html>

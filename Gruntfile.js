@@ -74,14 +74,14 @@ module.exports = function(grunt){
         },
         cssmin: {
             build: {
-                src: 'styles/styles.css',
+                src: 'grunted/styles.css',
                 dest: 'grunted/styles.css'
             }
         },
         sass: {
             build: {
                 files: {
-                    'styles/styles.css': 'styles/styles.scss'
+                    'grunted/styles.css': 'styles/styles.scss'
                 }
             }
         }
