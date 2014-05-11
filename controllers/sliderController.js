@@ -51,7 +51,7 @@ sliderApp.controller('sliderController',
 			}
 		};
 		// ...and backward
-		$scope.back = function() {
+		$scope.previous = function() {
 			if ($scope.index === 0) {
 				$scope.index = $scope.slides.length - 1;
 				$scope.timer = 0;
