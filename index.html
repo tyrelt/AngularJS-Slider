@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='Slider' ng-init>
+<html ng-app='sliderApp' ng-init>
     <head>
         <!-- Angular -->
         <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js'></script>
@@ -13,8 +13,8 @@
         <link href="grunted/styles.css" rel="stylesheet" />
     </head>
     <body>
-    	<div ng-view>
-    	<!-- Inject view here at runtime -->
-    	</div>
+        <!-- I've made the  slider into a directive: a reusable component -->
+        <div slider>
+        </div>
     </body>
 </html>
