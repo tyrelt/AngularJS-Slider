@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html ng-app='Slider' ng-init>
+<html ng-app='sliderApp' ng-init>
     <head>
         <!-- Angular -->
-        <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.8/angular.min.js'></script>
         <!-- Routing and config -->
         <script src='app.js'></script>
         <!-- Minified controller(s) -->
@@ -13,8 +13,7 @@
         <link href="grunted/styles.css" rel="stylesheet" />
     </head>
     <body>
-    	<div ng-view>
-    	<!-- Inject view here at runtime -->
-    	</div>
+        <!-- Note: I've made the  slider into a custom directive, which lets us reuse it anywhere -->
+        <my-slider></my-slider>
     </body>
 </html>

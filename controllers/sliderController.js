@@ -1,4 +1,4 @@
-Slider.controller('sliderController',
+sliderApp.controller('sliderController',
 	['$scope', '$timeout',
 	function ($scope, $timeout) {
 		// If this were true MVC, we'd put the slider text in a model; since it's a simple demo, we'll just supply the data here
@@ -51,7 +51,7 @@ Slider.controller('sliderController',
 			}
 		};
 		// ...and backward
-		$scope.back = function() {
+		$scope.previous = function() {
 			if ($scope.index === 0) {
 				$scope.index = $scope.slides.length - 1;
 				$scope.timer = 0;
