@@ -3,6 +3,7 @@ $lightGray: #e6e6f0;
 $gray: #aaa;
 $darkGray: darkslategray;
 $blue: #3c6dc5;
+$darkBlue: #464696;
 $red: red;
 
 // General styles
@@ -15,10 +16,29 @@ h1 {
 }
 
 body {
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: $darkGray;
     background-color: $lightGray;
     font-family: 'Open Sans', helvetica;
+}
+
+button {
+    font-family: 'Open Sans', helvetica;
+    font-size: .8em;
+    background-color: $blue;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    padding: 8px 20px;
+    min-width: 140px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    &:focus, :active {
+        outline-style: none;
+    }
+    &:hover {
+        background-color: $darkBlue;
+    }
 }
 
 // Navigation dots
